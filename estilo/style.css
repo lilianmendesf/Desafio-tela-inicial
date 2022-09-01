@@ -30,12 +30,13 @@ body{
 }
 
 
+
 header{
     background-color:#056B9B;
     padding-top: 40px;
     min-height: 150px;
     text-align: center;
-    
+
 }
 
 header > h1{
@@ -56,12 +57,17 @@ header > p{
     text-shadow: 1px 1px 0px black;
 }
 
+/* li{
+    
+} */
+
 nav{
     background-color: #0b91cf;
     color: white;
     text-align: center;
     border: 1px solid rgba(0, 0, 0, 0.411);
     padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.733);
 }
 
 nav > a{
@@ -87,13 +93,16 @@ main{
 }
 
 main h1 {
-    color:#056B9B;
+    color:#000000;
     font-family: var(--fonte-android);
 }
 
 main h2 {
+    text-indent: 5px;
+    font-size: 1.3em;
     color:#056B9B;
     font-family: var(--fonte-android);
+    background-image:linear-gradient(to right, #0abaffc2, white);
 }
 
 main img{
@@ -106,14 +115,45 @@ main img.pequena{
     margin: auto;
 }
 
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+} /* esse p pode estar dentro do main em qualquer nível, por isso não coloquei 'main > p' */
+/* poderia ter colocado o text-indent para sinalizar o inicio do paragrafo, mas achei mais bonito visualmente sem */
+
+
 .video{
-    width: 50%;
-    display:block;
-    margin: auto;
+    margin-bottom: 30px;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
 
 }
 
+.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #0b91cf3d; 
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.712);
+}
+
+aside > ul{
+    list-style-type: '\2611\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
 footer{
+    text-align: center;
     background-color: #056B9B;
     color: white;
 }
