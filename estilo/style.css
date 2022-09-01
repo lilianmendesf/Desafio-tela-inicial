@@ -1,7 +1,119 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+/*h1 header */
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@200&display=swap'); /* fonte texto */
+
+@font-face{
+    font-family: 'Android'; 
+    src: url('../fontes/idroid.otf') format('Opentype');
+    font-weight: normal;
+
+}
+
+:root {
+    --fonte-padrão:'Nunito Sans', sans-serif;
+    --fonte-android: 'Android', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
 
 body{
-    background-color: #6fd54096;
+    font-family: 'Anek Telugu', sans-serif;
+    background-image: #056c9b8a;
+    background-color:#0abaffc2;
+}
+
+
+header{
+    background-color:#056B9B;
+    padding-top: 40px;
+    min-height: 150px;
+    text-align: center;
+    
+}
+
+header > h1{
+    color: white;
+    font-family: 'Russo One', sans-serif;
+    word-spacing: 13px;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px black;
+}
+
+header > p{
+    font-family: 'Anek Telugu', sans-serif;
+    color: white;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    text-shadow: 1px 1px 0px black;
+}
+
+nav{
+    background-color: #0b91cf;
+    color: white;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.411);
+    padding: 10px;
+}
+
+nav > a{
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{
+    background-color: #0abaffc2;
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.733);
+}
+
+main h1 {
+    color:#056B9B;
+    font-family: var(--fonte-android);
+}
+
+main h2 {
+    color:#056B9B;
+    font-family: var(--fonte-android);
+}
+
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 350px;
+    display:block;
+    margin: auto;
+}
+
+.video{
+    width: 50%;
+    display:block;
+    margin: auto;
+
+}
+
+footer{
+    background-color: #056B9B;
+    color: white;
 }
